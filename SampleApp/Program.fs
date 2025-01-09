@@ -1,4 +1,8 @@
-﻿let printGreeting name =
-    printfn $"Hello {name}"
+﻿open System
 
-printGreeting "Ana"
+let printGreeting =
+    // let now = DateTime.Now
+    let now = DateTime.Now.ToString("o")
+    printfn $"{now}"
+
+printGreeting
